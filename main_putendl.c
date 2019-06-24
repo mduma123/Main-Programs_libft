@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_strjoin.c                                     :+:      :+:    :+:   */
+/*   main_putendl.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mduma <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/19 09:14:31 by mduma             #+#    #+#             */
-/*   Updated: 2019/06/22 15:00:59 by mduma            ###   ########.fr       */
+/*   Created: 2019/06/24 12:36:59 by mduma             #+#    #+#             */
+/*   Updated: 2019/06/24 12:46:55 by mduma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-int		main()
+int		main(void)
 {
-	char str1[] = "Hey";
-	char str2[] = "William";
-	char *ret;
-
-	ret = ft_strjoin(str1, str2);
-	ft_putendl(ret);
-	return (0);
+	char s[] = "Mxolisi";
+	ft_putendl(s);
+	return(0);
 }

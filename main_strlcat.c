@@ -6,12 +6,10 @@
 /*   By: mduma <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 09:15:17 by mduma             #+#    #+#             */
-/*   Updated: 2019/06/19 09:19:40 by mduma            ###   ########.fr       */
+/*   Updated: 2019/06/24 08:28:11 by mduma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 int		main(void)
@@ -20,9 +18,11 @@ int		main(void)
 
 	size_t i;
 
-	ft_strcpy( WeThinkCode, "Hello " );
-    i = ft_strncat( WeThinkCode, "world", 8 );
-    printf( "%d\n%s", i ,WeThinkCode );
+	ft_strcpy( WeThinkCode, "Hello bkejfjbvjharbiervhbre" );
+    i = ft_strlcat( WeThinkCode, "world", 8 );
+    ft_putnbr((int)i);
+	ft_putchar('\n');
+	ft_putendl(WeThinkCode);
 
 	return (0);
 }

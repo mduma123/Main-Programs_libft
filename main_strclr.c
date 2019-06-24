@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_strjoin.c                                     :+:      :+:    :+:   */
+/*   main_strclr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mduma <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/19 09:14:31 by mduma             #+#    #+#             */
-/*   Updated: 2019/06/22 15:00:59 by mduma            ###   ########.fr       */
+/*   Created: 2019/06/22 14:07:50 by mduma             #+#    #+#             */
+/*   Updated: 2019/06/22 14:08:39 by mduma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
-
-int		main()
+int		main (void)
 {
-	char str1[] = "Hey";
-	char str2[] = "William";
-	char *ret;
 
-	ret = ft_strjoin(str1, str2);
-	ft_putendl(ret);
-	return (0);
+	char toto[] = "yalah";
+
+	printf("before strclr = [%s]\n", toto);
+	ft_strclr(toto);
+	printf(" after strclr = [%s]\n", toto);
+	return(0);
+
 }

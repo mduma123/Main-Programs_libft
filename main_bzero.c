@@ -6,7 +6,7 @@
 /*   By: mduma <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 12:56:03 by mduma             #+#    #+#             */
-/*   Updated: 2019/06/20 14:52:39 by mduma            ###   ########.fr       */
+/*   Updated: 2019/06/22 14:53:37 by mduma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@
 //Fills the first n bytes of the object pointed to by dst with zero (NUL) bytes.
 int main( void )
   {
-    char Mxolisi[80];
+    char mxolisi[35] = "Hello, hope the tests go well.";
 
-    ft_bzero( Mxolisi, 80 );
+	ft_putendl(mxolisi);
+    ft_bzero(mxolisi, ft_strlen(mxolisi));
+	write(1, mxolisi, ft_strlen(mxolisi));
     return (0);
   }
